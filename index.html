@@ -24,22 +24,22 @@
 
 <section id="sr" lang="sr">
 <h1>Politika privatnosti — LerneGy</h1>
-<p class="muted">Poslednja izmena: 25. septembar 2026.</p>
+<p class="muted">Poslednja izmena: 4. oktobar 2026.</p>
 
-<p>LerneGy je aplikacija za učenje nemačkog i francuskog jezika. Napravljena je tako da o tebi ne prikuplja ništa: nema naloga, prijave, analitike, reklama ni praćenja, i ne šalje podatke na server autora aplikacije (takav server ne postoji).</p>
+<p>LerneGy je aplikacija za učenje nemačkog i francuskog jezika za iPhone, iPad i Android. Napravljena je tako da o tebi ne prikuplja ništa: nema naloga, prijave, analitike, reklama ni praćenja, i ne šalje podatke na server autora aplikacije (takav server ne postoji).</p>
 
 <h2>Šta ostaje na tvom uređaju</h2>
 <ul>
   <li><strong>Napredak u učenju</strong> — ponavljanje kartica, statistika, niz dana, dostignuća, omiljene reči i glagoli, nedavne aktivnosti i podešavanja (jezik interfejsa, jezik učenja, glas). Čuvaju se lokalno na uređaju i brišu se kad obrišeš aplikaciju.</li>
-  <li><strong>Widget „Reč dana"</strong> — aplikacija deli reč dana sa svojim widgetom preko zajedničkog skladišta na istom uređaju.</li>
-  <li><strong>Izgovor</strong> — reči i rečenice izgovara sistemski glas iOS-a na samom uređaju.</li>
-  <li><strong>Gemini API ključ</strong> — ako ga uneseš, čuva se u iOS Keychain-u na uređaju i koristi se samo za zahteve prema Google-u opisane ispod.</li>
+  <li><strong>Izgovor</strong> — reči i rečenice izgovara sistemski glas uređaja (na iOS-u sistemski glasovi, na Androidu sistemski mehanizam za pretvaranje teksta u govor) na samom uređaju.</li>
+  <li><strong>Gemini API ključ</strong> — ako ga uneseš, čuva se na uređaju (na iOS-u u Keychain-u, na Androidu šifrovan ključem iz Android Keystore-a, izuzet iz rezervnih kopija) i koristi se samo za zahteve prema Google-u opisane ispod.</li>
+  <li><strong>Rezervne kopije</strong> — ako su na uređaju uključene sistemske rezervne kopije (iCloud ili Android rezervna kopija na Google nalogu), napredak u učenju može biti deo njih, pod uslovima Apple-a odnosno Google-a. Autor aplikacije im nema pristup.</li>
 </ul>
 
 <h2>Šta napušta tvoj uređaj: AI funkcije (Google Gemini)</h2>
-<p>AI funkcije (provera rečenica, razgovor sa AI saputnikom i objašnjenje greške u vežbi) rade samo ako sam uneseš svoj Gemini API ključ. Kad ih koristiš, tekst koji napišeš i kratak kontekst vežbe šalju se <strong>direktno sa tvog uređaja</strong> Google-ovom servisu Gemini API (<code>generativelanguage.googleapis.com</code>), zajedno sa tvojim ključem. Autor aplikacije te podatke ne vidi i ne čuva.</p>
+<p>AI funkcije (provera rečenica, razgovor sa AI saputnikom, objašnjenje greške u vežbi i objašnjenje glagola) rade samo ako sam uneseš svoj Gemini API ključ. Kad ih koristiš, tekst koji napišeš i kratak kontekst vežbe šalju se <strong>direktno sa tvog uređaja</strong> Google-ovom servisu Gemini API (<code>generativelanguage.googleapis.com</code>), zajedno sa tvojim ključem. Autor aplikacije te podatke ne vidi i ne čuva.</p>
 <p>Te podatke obrađuje Google prema svojim uslovima za Gemini API i svojoj politici privatnosti (<a href="https://ai.google.dev/gemini-api/terms">ai.google.dev/gemini-api/terms</a>, <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Kod besplatnog nivoa Gemini API-ja Google može da koristi poslati sadržaj za poboljšanje svojih proizvoda, pa u AI funkcije <strong>ne upisuj lične ili osetljive podatke</strong>.</p>
-<p>Ako ne uneseš ključ, aplikacija ne šalje ništa ni na jedan server.</p>
+<p>Ako ne uneseš ključ, aplikacija ne šalje ništa ni na jedan server. Na Androidu aplikacija traži samo dozvolu za pristup internetu, i to isključivo za ove zahteve prema Gemini API-ju.</p>
 
 <h2>Deca</h2>
 <p>Aplikacija ne prikuplja lične podatke ni od koga, pa ni od dece. AI funkcije zahtevaju Google nalog i ključ, za šta važe Google-ovi uslovi i starosna ograničenja.</p>
@@ -55,22 +55,22 @@
 
 <section id="en" lang="en">
 <h1>Privacy Policy — LerneGy</h1>
-<p class="muted">Last updated: September 25, 2026.</p>
+<p class="muted">Last updated: October 4, 2026.</p>
 
-<p>LerneGy is an app for learning German and French. It is built to collect nothing about you: there are no accounts, sign-in, analytics, ads or tracking, and it sends no data to a server run by the developer (there is no such server).</p>
+<p>LerneGy is an app for learning German and French for iPhone, iPad and Android. It is built to collect nothing about you: there are no accounts, sign-in, analytics, ads or tracking, and it sends no data to a server run by the developer (there is no such server).</p>
 
 <h2>What stays on your device</h2>
 <ul>
   <li><strong>Learning progress</strong> — card reviews, statistics, streak, achievements, favourite words and verbs, recent activity and settings (interface language, learning language, voice). Stored locally on the device and removed when you delete the app.</li>
-  <li><strong>"Word of the Day" widget</strong> — the app shares the word of the day with its widget through shared storage on the same device.</li>
-  <li><strong>Pronunciation</strong> — words and sentences are spoken by the iOS system voice on the device itself.</li>
-  <li><strong>Gemini API key</strong> — if you enter one, it is stored in the iOS Keychain on the device and used only for the Google requests described below.</li>
+  <li><strong>Pronunciation</strong> — words and sentences are spoken by the device's system voice (iOS system voices, Android's text-to-speech engine) on the device itself.</li>
+  <li><strong>Gemini API key</strong> — if you enter one, it is stored on the device (in the Keychain on iOS; on Android encrypted with a key from Android Keystore and excluded from backups) and used only for the Google requests described below.</li>
+  <li><strong>Backups</strong> — if system backups are turned on (iCloud or Android backup to your Google account), your learning progress may be included in them, under Apple's or Google's terms. The developer has no access to them.</li>
 </ul>
 
 <h2>What leaves your device: AI features (Google Gemini)</h2>
-<p>The AI features (sentence checking, conversation with the AI companion and explanation of a mistake in an exercise) work only if you enter your own Gemini API key. When you use them, the text you write and a short exercise context are sent <strong>directly from your device</strong> to Google's Gemini API (<code>generativelanguage.googleapis.com</code>), together with your key. The developer does not see or store this data.</p>
+<p>The AI features (sentence checking, conversation with the AI companion, explanation of a mistake in an exercise and verb explanations) work only if you enter your own Gemini API key. When you use them, the text you write and a short exercise context are sent <strong>directly from your device</strong> to Google's Gemini API (<code>generativelanguage.googleapis.com</code>), together with your key. The developer does not see or store this data.</p>
 <p>Google processes this data under its Gemini API terms and privacy policy (<a href="https://ai.google.dev/gemini-api/terms">ai.google.dev/gemini-api/terms</a>, <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). On the free tier of the Gemini API, Google may use submitted content to improve its products, so <strong>do not enter personal or sensitive information</strong> into the AI features.</p>
-<p>If you don't enter a key, the app sends nothing to any server.</p>
+<p>If you don't enter a key, the app sends nothing to any server. On Android the app requests only the internet permission, used solely for these Gemini API requests.</p>
 
 <h2>Children</h2>
 <p>The app collects no personal data from anyone, including children. The AI features require a Google account and key, which are subject to Google's terms and age requirements.</p>
